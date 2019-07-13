@@ -1,0 +1,29 @@
+<!-- ============================================================== -->
+<!-- Left Sidebar - style you can find in sidebar.scss  -->
+<!-- ============================================================== -->
+<aside class="left-sidebar">
+    <!-- Sidebar scroll-->
+    <div class="scroll-sidebar">
+        <!-- Sidebar navigation-->
+        <nav class="sidebar-nav">
+
+          <ul id="sidebarnav">
+            <li><a  routerLinkActive="active" routerLink="/dashboard">
+                <i class="mdi mdi-home"></i><span>Inicio</span></a></li>
+            <li><a  routerLinkActive="active" routerLink="/config">
+                <i class="mdi mdi-settings"></i><span>Configuración</span></a></li>
+            <li><a (click)="logout()"  routerLinkActive="active"  routerLink="/login">
+                <i class="mdi mdi-logout-variant"></i><span>Salir</span></a></li>
+            <!-- <li class="nav-devider"></li> -->
+
+          </ul>
+
+
+        </nav>
+        <!-- End Sidebar navigation -->
+    </div>
+    <!-- End Sidebar scroll-->
+</aside>
+<!-- ============================================================== -->
+<!-- End Left Sidebar - style you can find in sidebar.scss  -->
+<!-- ============================================================== -->

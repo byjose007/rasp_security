@@ -1,0 +1,35 @@
+
+<section id="wrapper">
+        <div class="login-register">
+            <div class="login-box card">
+                <div class="card-body">
+                    <form class="form-horizontal form-material" [formGroup]="loginform">
+                        <h3 class="box-title m-b-20 text-center">Login Backoffice</h3>
+                        <div class="text-center">
+      
+                          <!-- <img src="../../../assets/images/logo-icon.png" alt="homepage" class="dark-logo" /> -->
+                        </div>
+                        <br><br>
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <input class="form-control" type="text" formControlName="username"  placeholder="Usuario"> </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <input class="form-control" type="password" formControlName="password" placeholder="Contraseña"> </div>
+                        </div>
+                        <br>
+                        <div class="form-group text-center">
+                            <div class="col-xs-12 p-b-20">
+                                <button type="button" [disabled]="!loginform.valid" class="btn btn-block btn-md btn-info btn-rounded" (click)="login()" >Entrar</button>
+                            </div>
+                        </div>
+      
+                    </form>
+                </div>
+            </div>
+        </div>
+      </section>
+      
+      
+      
